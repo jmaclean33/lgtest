@@ -52,12 +52,7 @@ labels:
       default: red
       type_hint: dropdown
       dd_list:
-          key: green
-          value: color2
-          key: orange
-          value: color6
-          key: red
-          value: color1
+
 #
 ## ---------------------------------------------------------------------
 ## end of variables section
