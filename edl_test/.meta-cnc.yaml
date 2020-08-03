@@ -26,7 +26,7 @@ labels:
 # variables used in the configuration templates
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
-#variables:
+variables:
   - name: EDL_NAME
     description: External-list name
     default: my_edl
@@ -75,7 +75,7 @@ labels:
 # There is a variable called snippets that we can use to auto-generate this section for us
 snippets:
 
-  - name: external-list-890364
+  - name: object_edl
     xpath: /config/devices/entry[@name="localhost.localdomain"]/vsys/entry[@name="vsys1"]
     element: |-
         <external-list>
@@ -92,7 +92,7 @@ snippets:
                     </entry>
                   </external-list>
 
-  - name: tag-99616
+  - name: object_edl
     xpath: /config/devices/entry[@name="localhost.localdomain"]/vsys/entry[@name="vsys1"]
     element: |-
                     <entry name="{{ Tag_Name }}">
@@ -100,7 +100,7 @@ snippets:
                       <comments>{{ Tag_description }}</comments>
                     </entry>
 
-  - name: security-145052
+  - name: policy_security_outbound
     xpath: /config/devices/entry[@name="localhost.localdomain"]/vsys/entry[@name="vsys1"]/rulebase
     element: |-
         <security>
