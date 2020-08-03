@@ -27,7 +27,7 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 #variables:
-- name: EDL_NAME
+  - name: EDL_NAME
     description: External-list name
     default: my_edl
     type_hint: text
@@ -48,10 +48,18 @@ labels:
     default: tag description
     type_hint: text
   - name: tag_color
-      description: tag color
-      default: red
-      type_hint: dropdown
-      dd_list:
+    description: tag color
+    default: red
+    type_hint: dropdown
+    dd_list:
+      - key: blue
+        value: color3
+      - key: green
+        value: color2
+      - key: orange
+        value: color6
+      - key: red
+        value: color1
 
 #
 # ---------------------------------------------------------------------
