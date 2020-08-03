@@ -1,31 +1,31 @@
 # slet preamble information used by panhandler
-## ---------------------------------------------------------------------
-## unique snippet name
+# ---------------------------------------------------------------------
+# unique snippet name
 name: mySkillet_test_edl
-## label used for menu selection
+# label used for menu selection
 label: LG_Test
 description: Local Gov Test skillet
 #
-## type of device configuration
-## common types are panorama, panos, and template
-## https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
 type: panos
-## preload static or default-based templates
+# preload static or default-based templates
 #extends:
 #
-## grouping of like snippets for dynamic menu creation in panhandler
+# grouping of like snippets for dynamic menu creation in panhandler
 labels:
   collection:
   - myCollection
 #
-## ---------------------------------------------------------------------
-## end of preamble section
+# ---------------------------------------------------------------------
+# end of preamble section
 #
-## variables section
-## ---------------------------------------------------------------------
-## variables used in the configuration templates
-## type_hint defines the form field used by panhandler
-## type_hints can be text, ip_address, or dropdown
+# variables section
+# ---------------------------------------------------------------------
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
 #variables:
 - name: EDL_NAME
     description: External-list name
@@ -54,17 +54,17 @@ labels:
       dd_list:
 
 #
-## ---------------------------------------------------------------------
-## end of variables section
+# ---------------------------------------------------------------------
+# end of variables section
 #
-## snippets section
-## ---------------------------------------------------------------------
-## snippets used for api configuration including xpath and element as file name
-## files will load in the order listed
-## NOTE: The following snippets are auto-generated and ordered automatically.
-## Changing the content of the snippet may be necessary, but do NOT change the order
+# snippets section
+# ---------------------------------------------------------------------
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+# NOTE: The following snippets are auto-generated and ordered automatically.
+# Changing the content of the snippet may be necessary, but do NOT change the order
 #
-## There is a variable called snippets that we can use to auto-generate this section for us
+# There is a variable called snippets that we can use to auto-generate this section for us
 snippets:
 
   - name: external-list-890364
@@ -163,5 +163,5 @@ snippets:
                     </security>
 
 
-## ---------------------------------------------------------------------
-## end of snippets sectionkil
+# ---------------------------------------------------------------------
+# end of snippets sectionkil
